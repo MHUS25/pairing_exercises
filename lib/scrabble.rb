@@ -14,7 +14,7 @@ class Scrabble
     "L" => 1,
     "N" => 1,
     "R" => 1,
-    "S"=> 1,
+    "S" => 1,
     "T" => 1,
     "D" => 2,
     "G" => 2,
@@ -29,13 +29,13 @@ class Scrabble
     "Y" => 4,
     "K" => 5,
     "J" => 8,
-    "X" =>	8,
+    "X" => 8,
     "Q" => 10,
     "Z" => 10,
     " " => 0,
     "\t" => 0,
     "\n" => 0
-     }
+    }
     return 0 if @word == "" || @word == " " || @word.nil?
     word_score = 0
     @word.upcase.split('').each.with_index do |letter, index|
